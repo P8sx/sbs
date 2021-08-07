@@ -47,7 +47,7 @@ In the order in which they will be designed
 ### Relay module [SBS-RM-1.2]
 ![relay-module](./images/relay-module.png)
 
-### Input module [SBS-IM-1.0]
+### Input module [SBS-IM-1.1]
 ![input-module](./images/input-module.png)
 | Isolated Mode  | VIN Mode |
 | ------------- | ------------- |
