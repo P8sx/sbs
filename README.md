@@ -3,21 +3,11 @@
 </p>
 
 # Smart board system 
-is modular system of 48mm x 48/64/72mm boards that are conected using 4 PIN connector, each SBS module are/will be equip with ESP8285/ESP32 module with 3.3V regulator. 
+is modular system of 48mm x 48/64/72mm boards that are conected using 4 PIN connector, each SBS module are/will be equip with own low power MCU to manage periphials and communicate with supervisor
 
-Goal of a project was to create affordable, small and modular system for home automation. By having WIFI chip on each module you can use it separatly as standalone module, or connect multiple boards with one supervisor to create bigger system.
-
-## WARNING 
-Project is in very **EARLY STAGE** (so no file are actually present in repository)
-
-## Standalone mode
-Board can be flashed with custom firmware to be used as simple standalone home automation module.
-
-## Supervisor mode
-Each board connect using 4 PIN connector with main supervisor (ESP32/RaspberryPI/PC?) using PJON/OneWire communication interface. Supervisor will be responsible for system working logic ex. (if (input from board x == high) turn relay x on board y)
+Goal of a project was to create affordable, small and modular system for home automation. By connecting multiple boards with one supervisor you can create flexible and expandable system using single bus connector.
 
 ## Modules
-In the order in which they will be designed
 | State | Name | Description | Estimate BOM per board (excl. shipping) |
 | ------------- | ------------- | ------------- | ------------- |
 | [D] | Relay | 4 SPDT 10A relays | 5$ |
@@ -53,6 +43,14 @@ In the order in which they will be designed
 | ------------- | ------------- |
 | ![input-module-isolated](./images/input-module-isolated.png) | ![input-module-vin](./images/input-module-vin.png) |
 
+## WARNING 
+Project is in very **EARLY STAGE** (so no file are actually present in repository)
+
+## Standalone mode
+Currently modules are equipped with ESP8285 which mean you can flash any firmware to use board as standalone WIFI enabled device
+
+## Supervisor mode
+Each board connect using bus connector with main supervisor (ESP32/RaspberryPI/PC?) using communication interface. Supervisor will be responsible for system working logic ex. if (input from module_X == high) turn relay_Y on module_Z
 
 ## Supervisor's
 | State | Name | Description | Estimate BOM per board (excl. shipping) |
@@ -61,7 +59,7 @@ In the order in which they will be designed
 | [ ] | ESP32 | Supervisor based on ESP32 module | 8$ |
 
 ## SBS Bus
-
+Curently SBS bus uses JST ZH 4 pin connector, and PJON network protocol
 | Row |
 | ------------- |
 | 24/12V |
@@ -69,6 +67,12 @@ In the order in which they will be designed
 | GND |
 | PJON |
 
+The connector is a debatable question, condition are as listed below 
+- small footprint 
+- easy to get\buy connection cables (pre made cables are cheaply available on many websites)
+- high current capability (not satisfied with that JST ZH is max 1A)
+
+until first prototype order connector type may change
 
 
 ## LICENSE
