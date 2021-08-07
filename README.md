@@ -48,7 +48,7 @@ In the order in which they will be designed
 ![relay-module](./images/relay-module-rev12.png)
 
 ### Input module [SBS-IM-1.1]
-![input-module](./images/input-module.png)
+![input-module](./images/input-module-rev11.png)
 | Isolated Mode  | VIN Mode |
 | ------------- | ------------- |
 | ![input-module-isolated](./images/input-module-isolated.png) | ![input-module-vin](./images/input-module-vin.png) |
