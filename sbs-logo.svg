@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="161.655mm"
+   height="49.560001mm"
+   viewBox="0 0 161.655 49.560001"
+   version="1.1"
+   id="svg8"
+   inkscape:version="1.0.1 (3bc2e813f5, 2020-09-07)"
+   sodipodi:docname="sbs-logo.svg">
+  <defs
+     id="defs2">
+    <rect
+       x="54.729816"
+       y="54.297672"
+       width="186.70284"
+       height="156.25809"
+       id="rect835" />
+  </defs>
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="1.4"
+     inkscape:cx="238.10922"
+     inkscape:cy="134.46501"
+     inkscape:document-units="mm"
+     inkscape:current-layer="layer1"
+     inkscape:document-rotation="0"
+     showgrid="false"
+     width="49.56mm"
+     inkscape:window-width="1856"
+     inkscape:window-height="1016"
+     inkscape:window-x="64"
+     inkscape:window-y="27"
+     inkscape:window-maximized="1" />
+  <metadata
+     id="metadata5">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Warstwa 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <rect
+       style="fill:#ffffff;stroke-width:0.264583"
+       id="rect841"
+       width="175.09106"
+       height="54.097"
+       x="-5.2413568"
+       y="-1.3736163" />
+    <text
+       xml:space="preserve"
+       id="text833"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:50.8px;line-height:1.25;font-family:Tourney;-inkscape-font-specification:Tourney;letter-spacing:0px;word-spacing:0px;white-space:pre;shape-inside:url(#rect835);fill:#000000;fill-opacity:1;stroke:none;"
+       transform="matrix(1.0795205,0,0,1,-55.235941,-59.650511)"><tspan
+         x="54.730469"
+         y="102.21051"><tspan
+           style="shape-inside:url(#rect835)">SBS</tspan></tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:10.5255px;line-height:1.25;font-family:Ubuntu;-inkscape-font-specification:Ubuntu;letter-spacing:0px;word-spacing:0px;stroke-width:0.263139"
+       x="119.99208"
+       y="14.501019"
+       id="text843"
+       transform="scale(1.0054893,0.99454069)"><tspan
+         sodipodi:role="line"
+         id="tspan841"
+         x="119.99208"
+         y="14.501019"
+         style="stroke-width:0.263139">Smart</tspan><tspan
+         sodipodi:role="line"
+         x="119.99208"
+         y="27.657894"
+         style="stroke-width:0.263139"
+         id="tspan845">Board</tspan><tspan
+         sodipodi:role="line"
+         x="119.99208"
+         y="40.81477"
+         style="stroke-width:0.263139"
+         id="tspan847">System</tspan></text>
+    <rect
+       style="fill:#111111;stroke-width:0.259383"
+       id="rect849"
+       width="2"
+       height="35.560001"
+       x="113"
+       y="7" />
+  </g>
+</svg>
