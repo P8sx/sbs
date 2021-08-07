@@ -45,7 +45,7 @@ In the order in which they will be designed
 ## Modules preview
 
 ### Relay module [SBS-RM-1.2]
-![relay-module](./images/relay-module.png)
+![relay-module](./images/relay-module-rev12.png)
 
 ### Input module [SBS-IM-1.1]
 ![input-module](./images/input-module.png)
