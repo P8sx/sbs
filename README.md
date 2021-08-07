@@ -3,7 +3,7 @@
 </p>
 
 # Smart board system 
-is modular system of 64mm x 48mm boards that are conected using 6 PIN connector, each SBS module are/will be equip with ESP8285/ESP32 module with 3.3V regulator. 
+is modular system of 48mm x 48/64/72mm boards that are conected using 4 PIN connector, each SBS module are/will be equip with ESP8285/ESP32 module with 3.3V regulator. 
 
 Goal of a project was to create affordable, small and modular system for home automation. By having WIFI chip on each module you can use it separatly as standalone module, or connect multiple boards with one supervisor to create bigger system.
 
@@ -14,14 +14,14 @@ Project is in very **EARLY STAGE** (so no file are actually present in repositor
 Board can be flashed with custom firmware to be used as simple standalone home automation module.
 
 ## Supervisor mode
-Each board connect using 6 PIN JST SH connector with main supervisor (ESP32/RaspberryPI/PC?) using PJON/OneWire communication interface. Supervisor will be responsible for system working logic ex. (if (input from board x == high) turn relay x on board y)
+Each board connect using 4 PIN connector with main supervisor (ESP32/RaspberryPI/PC?) using PJON/OneWire communication interface. Supervisor will be responsible for system working logic ex. (if (input from board x == high) turn relay x on board y)
 
 ## Modules
 In the order in which they will be designed
 | State | Name | Description | Estimate BOM per board (excl. shipping) |
 | ------------- | ------------- | ------------- | ------------- |
 | [D] | Relay | 4 SPDT 10A relays | 5$ |
-| [D] | Digital Input | 6 optocouplers with 5-48V input range | 4$ |
+| [D] | Digital Input | 4 optocouplers with 5-48V input range | 4$ |
 | [ ] | Motor driver | Single/dual motor driver using TB67H420FTG with two impulse inputs, and relay for PSU controll | 15$ |
 | [ ] | Communication bridge | Bridge between multiple communication interfaces (I2C/OneWire/RS485/CAN) | 8$ |
 | [ ] | Power | Power input module with necessary power converter and safety protection, and SBUS power consumption monitoring | TBD | TBD |
@@ -67,12 +67,7 @@ In the order in which they will be designed
 | 24/12V |
 | 5V |
 | GND |
-| GND |
 | PJON |
-| ALARM |
-
-
-When alarm pin is raised/lowered supervisor/power module will shutdown power for all SBS modules, only way to restore SBS connected modules is to manually reset power
 
 
 
