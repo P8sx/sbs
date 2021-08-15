@@ -45,6 +45,8 @@ Currently modules are equipped with ESP8285 which mean you can flash any firmwar
 Each board connect using bus connector with main supervisor (ESP32/RaspberryPI/PC?) using communication interface. Supervisor will be responsible for system working logic ex. if (input from module_X == high) turn relay_Y on module_Z
 
 ## Supervisor's
+### Supervisor module [SBS-SV-NPI-1.0]
+![input-module](./images/supervisor-nanopi-rev10.png)
 | State | Name | Description | Estimate BOM per board (excl. shipping) |
 | ------------- | ------------- | ------------- | ------------- |
 | [D] | NanoPi Neo | Supervisor based on raspberry pi zero w | TBD |
