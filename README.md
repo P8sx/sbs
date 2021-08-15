@@ -21,15 +21,7 @@ Goal of a project was to create affordable, small and modular system for home au
 | [ ] | Battery | UPS battery module with charging/discharging/monitoring capabilities (possible solar charging) | TBD | TBD |
 | [ ] | Analog Input | TBD | TBD |
 | [ ] | Analog Output | TBD | TBD |
-### Legend
-| Symbol | Meaning |
-| ------------- | ------------- |
-| D | Design - module are in design stage |
-| P | Prototype - prototype are ordered |
-| T | Testing - module are in testing phase |
-| S | Software - software are developed |
-| V | Victory - at least one revision of module are succesfuly developed |
-|  | Awaiting development |
+
 
 
 ## Modules preview
@@ -55,8 +47,8 @@ Each board connect using bus connector with main supervisor (ESP32/RaspberryPI/P
 ## Supervisor's
 | State | Name | Description | Estimate BOM per board (excl. shipping) |
 | ------------- | ------------- | ------------- | ------------- |
-| [ ] | Pi zero | Supervisor based on raspberry pi zero w | 15$ |
-| [ ] | ESP32 | Supervisor based on ESP32 module | 8$ |
+| [D] | NanoPi Neo | Supervisor based on raspberry pi zero w | TBD |
+| [ ] | ESP32 | Supervisor based on ESP32 module | TBD |
 
 ## SBS Bus
 Curently SBS bus uses JST ZH 4 pin connector, and PJON network protocol
@@ -74,6 +66,15 @@ The connector is a debatable question, condition are as listed below
 
 until first prototype order connector type may change
 
+### Legend
+| Symbol | Meaning |
+| ------------- | ------------- |
+| D | Design - module are in design stage |
+| P | Prototype - prototype are ordered |
+| T | Testing - module are in testing phase |
+| S | Software - software are developed |
+| V | Victory - at least one revision of module are succesfuly developed |
+|  | Awaiting development |
 
 ## LICENSE
 (CC BY-NC 3.0) to be discuss!!
