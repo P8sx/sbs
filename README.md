@@ -68,7 +68,7 @@ The connector is a debatable question, condition are as listed below
 
 until first prototype order connector type may change
 
-### Legend
+## Legend
 | Symbol | Meaning |
 | ------------- | ------------- |
 | D | Design - module are in design stage |
@@ -77,6 +77,9 @@ until first prototype order connector type may change
 | S | Software - software are developed |
 | V | Victory - at least one revision of module are succesfuly developed |
 |  | Awaiting development |
+
+### Module naming schema(TBD)
+SBS-[Module type]-{Optional info}-[Revision]
 
 ## LICENSE
 (CC BY-NC 3.0) to be discuss!!
