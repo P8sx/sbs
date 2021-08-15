@@ -49,7 +49,7 @@ Each board connect using bus connector with main supervisor (ESP32/RaspberryPI/P
 ![input-module](./images/supervisor-nanopi-rev10.png)
 | State | Name | Description | Estimate BOM per board (excl. shipping) |
 | ------------- | ------------- | ------------- | ------------- |
-| [D] | NanoPi Neo | Supervisor based on raspberry pi zero w | TBD |
+| [D] | NanoPi Neo | Supervisor based on NanoPi Neo 1.4 | TBD |
 | [ ] | ESP32 | Supervisor based on ESP32 module | TBD |
 
 ## SBS Bus
