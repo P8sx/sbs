@@ -5,7 +5,12 @@
 # Smart board system 
 is modular system of 48mm x 48/64/80mm boards that are conected using 4 PIN connector, each SBS module are/will be equip with own low power MCU to manage periphials and communicate with supervisor
 
-Goal of a project was to create affordable, small and modular system for home automation. By connecting multiple boards with one supervisor you can create flexible and expandable system using single bus connector.
+Goal of a project was to create affordable, small and modular system for home automation. By connecting multiple boards with one supervisor you can create flexible and expandable system using single bus connector
+
+### Why?
+I'm a big fan of home automation using HA/Domoticz etc. currentyl most of end devices are ESP WiFI devices with custom firmware, but i'm just tired of using and configuring X number of WIFI devices just to controll few things. Configuring, updating and minor logic changing in this modules are bit tidious, soo thats why i started this project of centralised modular and expandable system that you can put in single room, floor, garage, building to manage multiple devices.
+
+For ex. you want to control multiple garage gate, garage lighting, and few door sensor for security, instead of buying multiple WiFi/Zigbee devices, you can use SBS sytem, by adding few relay and input modules you can achive same functionalty, and if you want to controll more things just add another module.
 
 ## Modules
 | State | Name | Description | Estimate BOM per board (excl. shipping) |
@@ -47,10 +52,13 @@ Each board connect using bus connector with main supervisor (ESP32/RaspberryPI/P
 ## Supervisor's
 ### Supervisor module [SBS-SV-NPI-1.0]
 ![input-module](./images/supervisor-nanopi-rev10.png)
+This supervisor module is equipped with INA3221 voltage/current meter thus we can measure power consumption of NanoPI and each SBS Power line, also two P channel mosfet allow to cut off power for modules(in next revision this functionality will be moved to power module)
+
 | State | Name | Description | Estimate BOM per board (excl. shipping) |
 | ------------- | ------------- | ------------- | ------------- |
 | [D] | NanoPi Neo | Supervisor based on NanoPi Neo 1.4 | TBD |
 | [ ] | ESP32 | Supervisor based on ESP32 module | TBD |
+
 
 ## SBS Bus
 Curently SBS bus uses JST ZH 4 pin connector, and PJON network protocol
