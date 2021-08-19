@@ -15,7 +15,7 @@ For ex. you want to control multiple garage gate, garage lighting, and few door 
 ## Modules
 | State | Name | Description | Estimate BOM per board (excl. shipping) |
 | ------------- | ------------- | ------------- | ------------- |
-| [D] | Relay | 4 SPDT 10A relays | 5$ |
+| [D] | Relay | 4 SPDT 10A relays OR 2 SPDT 30A relays OR X SPDT 0,5A signal relays | 5$ |
 | [D] | Digital Input | 4 optocouplers with 5-48V input range | 4$ |
 | [ ] | Motor driver | Single/dual motor driver using TB67H420FTG with two impulse inputs, and relay for PSU controll | 15$ |
 | [ ] | Communication bridge | Bridge between multiple communication interfaces (I2C/OneWire/RS485/CAN) | 8$ |
@@ -27,7 +27,8 @@ For ex. you want to control multiple garage gate, garage lighting, and few door 
 | [ ] | Analog Input | TBD | TBD |
 | [ ] | Analog Output | TBD | TBD |
 
-
+## Updates
+Esp8285 will be changed to other mcu, mayby attiny?
 
 ## Modules preview
 
