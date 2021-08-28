@@ -3,7 +3,7 @@
 </p>
 
 # Smart board system 
-is modular system of 48mm x 48/64/80mm boards that are conected using 4 PIN connector, each SBS module are/will be equip with own low power MCU to manage periphials and communicate with supervisor
+is modular system of 48mm x 48/64/80mm boards that are conected using 5 PIN connector, each SBS module are/will be equip with own low power MCU to manage periphials and communicate with supervisor
 
 Goal of a project was to create affordable, small and modular system for home automation. By connecting multiple boards with one supervisor you can create flexible and expandable system using single bus connector
 
@@ -32,8 +32,8 @@ Esp8285 will be changed to other mcu, mayby attiny?
 
 ## Modules preview
 
-### Relay module [SBS-RM-1.2]
-![relay-module](./images/relay-module-rev12.png)
+### Relay module [SBS-RM-1.0]
+![relay-module](./images/relay-module-rev10.png)
 
 ### Input module [SBS-IM-1.1]
 ![input-module](./images/input-module-rev11.png)
@@ -44,11 +44,8 @@ Esp8285 will be changed to other mcu, mayby attiny?
 ## WARNING 
 Project is in very **EARLY STAGE** (so no file are actually present in repository)
 
-## Standalone mode
-Currently modules are equipped with ESP8285 which mean you can flash any firmware to use board as standalone WIFI enabled device
-
-## Supervisor mode
-Each board connect using bus connector with main supervisor (ESP32/RaspberryPI/PC?) using communication interface. Supervisor will be responsible for system working logic ex. if (input from module_X == high) turn relay_Y on module_Z
+## Info
+Modules are equiped with ATtiny 1627/827/427
 
 ## Supervisor's
 ### Supervisor module [SBS-SV-NPI-1.0]
@@ -62,13 +59,14 @@ This supervisor module is equipped with INA3221 voltage/current meter thus we ca
 
 
 ## SBS Bus
-Curently SBS bus uses JST ZH 4 pin connector, and PJON network protocol
+Curently SBS bus uses JST ZH 5 pin connector, and PJON network protocol
 | Row |
 | ------------- |
 | 24/12V |
 | 5V |
 | GND |
 | PJON |
+| GND |
 
 The connector is a debatable question, condition are as listed below 
 - small footprint 
