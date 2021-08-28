@@ -13,30 +13,30 @@ I'm a big fan of home automation using HA/Domoticz etc. currentyl most of end de
 For ex. you want to control multiple garage gate, garage lighting, and few door sensor for security, instead of buying multiple WiFi/Zigbee devices, you can use SBS sytem, by adding few relay and input modules you can achive same functionalty, and if you want to controll more things just add another module.
 
 ## Modules
-| State | Name | Description | Estimate BOM per board (excl. shipping) |
-| ------------- | ------------- | ------------- | ------------- |
-| [D] | Relay | 4 SPDT 10A relays OR 2 SPDT 30A relays OR X SPDT 0,5A signal relays | 5$ |
-| [D] | Digital Input | 4 optocouplers with 5-48V input range | 4$ |
-| [ ] | Motor driver | Single/dual motor driver using TB67H420FTG with two impulse inputs, and relay for PSU controll | 15$ |
-| [ ] | Communication bridge | Bridge between multiple communication interfaces (I2C/OneWire/RS485/CAN) | 8$ |
-| [ ] | Power | Power input module with necessary power converter and safety protection, and SBUS power consumption monitoring | TBD | TBD |
-| [ ] | Proto | Prototyping perfboard module | 4$ |
-| [ ] | Digital Output | TBD | TBD |
-| [ ] | SSR Relay | 6/8 2A SSR relays | TBD |
-| [ ] | Battery | UPS battery module with charging/discharging/monitoring capabilities (possible solar charging) | TBD | TBD |
-| [ ] | Analog Input | TBD | TBD |
-| [ ] | Analog Output | TBD | TBD |
+| State | Name | Description |
+| ------------- | ------------- | ------------- |
+| [D] | Relay | 4 SPDT 10A relays OR 2 SPDT 30A relays OR X SPDT 0,5A signal relays |
+| [D] | Digital Input | 8 optocouplers with 5-36V input range |
+| [D] | Motor driver | Single/dual motor driver using TB67H420FTG with 4 impulse inputs, and relay for PSU controll |
+| [ ] | Communication bridge | Bridge between multiple communication interfaces (I2C/OneWire/RS485/CAN) |
+| [ ] | Power | Power input module with necessary power converter and safety protection, and SBUS power consumption monitoring | TBD |
+| [ ] | Proto | Prototyping perfboard module |
+| [ ] | Digital Output | TBD |
+| [ ] | SSR Relay | 6/8 2A SSR relays |
+| [ ] | Battery | UPS battery module with charging/discharging/monitoring capabilities (possible solar charging) | TBD |
+| [ ] | Analog Input | TBD |
+| [ ] | Analog Output | TBD |
 
 ## Updates
-Esp8285 will be changed to other mcu, mayby attiny?
+Replaced ESP8285 with ATtiny 3227/1627/827
 
 ## Modules preview
 
 ### Relay module [SBS-RM-1.0]
 ![relay-module](./images/relay-module-rev10.png)
 
-### Input module [SBS-IM-1.1]
-![input-module](./images/input-module-rev11.png)
+### Input module [SBS-IM-1.0]
+![input-module](./images/input-module-rev10.png)
 | Isolated Mode  | VIN Mode |
 | ------------- | ------------- |
 | ![input-module-isolated](./images/input-module-isolated.png) | ![input-module-vin](./images/input-module-vin.png) |
@@ -44,36 +44,28 @@ Esp8285 will be changed to other mcu, mayby attiny?
 ## WARNING 
 Project is in very **EARLY STAGE** (so no file are actually present in repository)
 
-## Info
-Modules are equiped with ATtiny 1627/827/427
 
 ## Supervisor's
 ### Supervisor module [SBS-SV-NPI-1.0]
 ![input-module](./images/supervisor-nanopi-rev10.png)
 This supervisor module is equipped with INA3221 voltage/current meter thus we can measure power consumption of NanoPI and each SBS Power line, also two P channel mosfet allow to cut off power for modules(in next revision this functionality will be moved to power module)
 
-| State | Name | Description | Estimate BOM per board (excl. shipping) |
-| ------------- | ------------- | ------------- | ------------- |
-| [D] | NanoPi Neo | Supervisor based on NanoPi Neo 1.4 | TBD |
-| [ ] | ESP32 | Supervisor based on ESP32 module | TBD |
+| State | Name | Description
+| ------------- | ------------- | ------------- |
+| [D] | NanoPi Neo | Supervisor based on NanoPi Neo 1.4 |
+| [ ] | ESP32 | Supervisor based on ESP32 module |
 
 
 ## SBS Bus
 Curently SBS bus uses JST ZH 5 pin connector, and PJON network protocol
 | Row |
 | ------------- |
-| 24/12V |
-| 5V |
 | GND |
 | PJON |
 | GND |
+| 5V |
+| 24/12V |
 
-The connector is a debatable question, condition are as listed below 
-- small footprint 
-- easy to get\buy connection cables (pre made cables are cheaply available on many websites)
-- high current capability (not satisfied with that JST ZH is max 1A)
-
-until first prototype order connector type may change
 
 ## Legend
 | Symbol | Meaning |
