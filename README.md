@@ -1,5 +1,5 @@
 
-<h3 align="center">***Project currently suspended due last college term, and insane price of components***</h3>
+<h3 align="center">***Project currently suspended due last college term, and rising price of components***</h3>
 
 <p align="center">
 <img src="./sbs-logo.png">
