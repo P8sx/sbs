@@ -17,6 +17,8 @@ For ex. you want to control multiple garage gate, garage lighting, and few door 
 
 
 ## Updates
+07.10.2021 - Project suspended
+
 29.08.2021 - Replaced ESP8285 with ATtiny 3227/1627/827
 
 14.09.2021 - Development of project slowed down due to shipping time of equipment, components for testings and personal projects. All files including pcb schematics will be published as soon as i get modules ordered and tested, after that i will start software development part.
