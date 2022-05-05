@@ -6,11 +6,13 @@
 </p>
 
 # Smart board system 
-is modular system of 48mm x 48/64/80mm boards that are conected using 5 PIN connector, each SBS module are/will be equip with own low power MCU to manage periphials and communicate with one single supervisor
+is modular system of 48mm x 48/64/80mm boards that are conected using 4 PIN connector, each SBS module are/will be equip with own low power MCU to manage periphials and communicate with other devices.
 
 Goal of a project was to create affordable, small and modular system for home automation. By connecting multiple boards with one supervisor you can create flexible and expandable system using single bus connector, avoiding the clutter of cables
 
 ## Updates
+05.05.2022 - Changed connector type to 4 pin JST SH and communication medium to RS485
+
 07.10.2021 - Project suspended
 
 29.08.2021 - Replaced ESP8285 with ATtiny 3227/1627/827
@@ -48,15 +50,13 @@ Project is in very **EARLY STAGE** (so no file are actually present in repositor
 
 
 ## SBS Bus
-Curently SBS bus uses JST ZH 5 pin connector, and PJON network protocol
+Curently SBS bus uses JST SH 4 pin connector, and RS485 transceiver
 | Row |
 | ------------- |
 | GND |
-| PJON |
-| GND |
 | 5V |
-| 24/12V |
-
+| A |
+| B |
 
 ## Legend
 | Symbol | Meaning |
